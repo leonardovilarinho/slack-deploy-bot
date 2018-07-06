@@ -1,0 +1,18 @@
+{
+  "name": "deploy-slack-bot",
+  "version": "1.0.0",
+  "description": "Slack bot for deploy your apps",
+  "main": "source/index.js",
+  "repository": "https://github.com/leonardovilarinho/deploy-slack-bot",
+  "author": "Leonardo Vilarinho <leonardo-i@outlook.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node source/index.js"
+  },
+  "dependencies": {
+    "botkit": "^0.6.14",
+    "dotenv": "^6.0.0",
+    "node-ssh": "^5.1.2"
+  }
+}
