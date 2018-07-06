@@ -52,4 +52,13 @@ module.exports = {
 			await bot.reply(message, e.replace('{user}', message.user).replace('{project}', app))
 		}
 	}),
+
+	list: (bot, message, body, app) => new Promise(async (resolve, reject) => {
+
+		const list = Object.keys(apps).reduce((ac, it) => `${ac}  - ${it}\n`, '')
+
+		await bot.reply(message, list.replace('{user}', message.user))
+		setTimeout(() => resolve(), 1000)
+	}),
+
 }

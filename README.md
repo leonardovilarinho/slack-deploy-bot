@@ -22,4 +22,5 @@ In Slack, invite your bot for an channel. Now, in channels with bot, the follow 
 ```
 d:push <app-name> # run deploy.sh from app-name in your server
 d:exec <app-name> <command> # run command from app-name in your server
+d:list * # list all applications in your bot
 ```
